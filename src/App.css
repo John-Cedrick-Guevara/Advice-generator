@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Karla:wght@400;500&family=Kumbh+Sans:wght@700&family=League+Spartan:wght@400;500;600;700&family=Manrope:wght@500;800&family=Poppins:ital,wght@0,200;0,400;0,700;1,400;1,800&family=Space+Mono:wght@700&family=Ubuntu:wght@500&display=swap");
+#root {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: hidden;
+
+  padding: 10px;
+}
+
+section {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+  max-width: 700px;
+
+  background-color: hsl(217, 19%, 24%);
+
+  box-shadow: 1px 2px 38px 4px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: 1px 2px 38px 4px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: 1px 2px 38px 4px rgba(0, 0, 0, 0.77);
+
+  padding: 20px 25px 60px;
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+h1 {
+  color: hsl(193, 38%, 86%);
+  padding: 20px;
+}
+
+p {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+}
+
+.dice-container {
+  background-color: hsl(150, 100%, 66%);
+  height: 30px;
+  width: 30px;
+  padding: 15px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: -30px;
+
+  cursor: pointer;
+}
+
+.dice-container:hover {
+box-shadow: 10px 10px 394px 16px rgba(82,255,168,1);
+-webkit-box-shadow: 10px 10px 394px 16px rgba(82,255,168,1);
+-moz-box-shadow: 10px 10px 394px 16px rgba(82,255,168,1);
+}
+
+@media (width < 500px) {
+  h1 {
+    font-size: 20px;
+  }
+}
